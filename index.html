@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Movie Hangman</title>
+    <link rel="stylesheet" href="hang.css">
+    <link rel="shortcut icon"
+          href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png" />
+</head>
+<body>
+    <main>
+        <h1>Movie Hangman</h1>
+        <div id="timer" class="timer">00:00</div>
+        <form>
+            <div id="gallows">
+                <img style="padding-left: 70px" id="hangmanImage" src="img\hangman0.png">
+            </div>
+        </form>
+        <div id="word"></div>
+        <br>
+        <div id="controls">
+            <input type="text" id="guessBox">
+            <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+            <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+            <br>
+            <br>
+            <form action="https://chschipper.com/2019/12/from-history-to-history-class-the-origin-of-classroom-games/">
+                <button class="button">How Hangman Came to Be</button>
+            </form>
+        </div>
+        <br>
+        <div id="guesses"></div>
+    </main>
+    <script src="hang.js"></script>
+</body>
+</html>
